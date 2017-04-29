@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - user@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="user">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="hh"/>
+    <schema id="3" name="information_schema"/>
+    <schema id="4" name="mysql"/>
+    <schema id="5" name="test"/>
+    <table id="6" parent="1" name="book"/>
+    <table id="7" parent="1" name="borrow"/>
+    <table id="8" parent="1" name="kk"/>
+    <table id="9" parent="1" name="user"/>
+    <column id="10" parent="6" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(100)|0</data-type>
+    </column>
+    <column id="11" parent="6" name="name">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="12" parent="6" name="writer">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="13" parent="6" name="price">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="14" parent="6" name="message">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="15" parent="6" name="isThis">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="16" parent="6" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="17" parent="7" name="user_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="18" parent="7" name="book_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <key id="19" parent="7" name="PRIMARY">
+      <columns>user_name</columns>
+      <primary>1</primary>
+    </key>
+    <column id="20" parent="8" name="name">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="21" parent="8" name="password">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="22" parent="9" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="23" parent="9" name="name">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="24" parent="9" name="password">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="25" parent="9" name="isroot">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="26" parent="9" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
